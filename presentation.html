@@ -47,7 +47,7 @@ Estos avances son impulsados ​​por una combinación de mejoras en tres área
 
 - Mejores conjuntos de datos <!-- .element: class="fragment" -->
 - Mejores modelos <!-- .element: class="fragment" -->
-- Potencia de computo <!-- .element: class="fragment" -->
+- Potencia de cómputo <!-- .element: class="fragment" -->
 
 <aside class="notes"><p>Si bien los dos últimos son en su mayoría independientes de un campo en particular, <strong>la disponibilidad de conjuntos de datos de calidad para un campo determinado limita la aplicación de estos nuevos avances.</strong></p>
 </aside></script></section><section data-markdown><script type="text/template">
@@ -60,12 +60,9 @@ La falta de datos perjudica en:
 </script></section><section data-markdown><script type="text/template">
 <!-- .slide: style="text-align: left" -->
 
-En particular, las redes neuronales convolucionales (CNN), un tipo de red neuronal que aprovecha las capas convolucionales para aprender filtros convolucionales arbitrarios, han demostrado ser muy efectivas en la clasificación de imágenes.
+En particular, las redes neuronales convolucionales (CNN) han demostrado ser muy efectivas en la clasificación de imágenes.
 </script></section><section data-markdown><script type="text/template">
-En la mayoría de las aplicaciones, las redes neuronales convolucionales se entrenan utilizando miles de imágenes por clase, pero...
-
 **¿Qué pasa si no contamos con esa cantidad de datos?**
-<!-- .element: class="fragment" -->
 
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## Redes Neuronales Convolucionales
@@ -85,7 +82,7 @@ Una ConvNet es una clase de redes neuronales profundas. Las CNN son versiones re
 </script></section><section data-markdown><script type="text/template">
 Las CNN adoptan un enfoque diferente hacia la regularización: aprovechan el patrón jerárquico en los datos y ensamblan patrones más complejos utilizando patrones más pequeños y simples.
 
-En resumen, el tamaño de una CNN suele ser menor y la cantidad de pesos es mucho mas reducida, y por cada capa se reduce esta cantidad.
+En resumen, el tamaño de una CNN suele ser menor y la cantidad de pesos es mucho más reducida, y por cada capa se reduce esta cantidad.
 <!-- .element: class="fragment" -->
 
 </script></section></section><section ><section data-markdown><script type="text/template">
@@ -133,19 +130,9 @@ Cada bloque convolucional recibe todo el conocimiento colectivo de las capas ant
 
 ### Prototypical Networks
 
-Modelo de meta-aprendizaje para el problema de la clasificación de pocos "disparos".
+Modelo de meta-learning para el problema de la clasificación de pocos "disparos".
 </script></section><section data-markdown><script type="text/template">
 Few shot learning generalmente se mide por su rendimiento en tareas de clasificación n-shot y k-way.
-</script></section><section data-markdown><script type="text/template">
-<!-- .slide: style="text-align: left" -->
-
-### Algoritmo
-
-- Primero, un modelo es dado de una muestra de consulta que pertenece a una clase nueva nunca antes vista. 
-
-- Luego, también se proporciona un conjunto de soporte, S, que consta de n ejemplos, cada uno de k diferentes clases no vistas. 
-
-- Finalmente, el algoritmo debe determinar a qué clase de conjunto de soporte pertenecen las muestras de consulta. 
 </script></section><section data-markdown><script type="text/template">
 <!-- .slide: style="text-align: left" -->
 
@@ -155,24 +142,33 @@ Few shot learning generalmente se mide por su rendimiento en tareas de clasifica
 </script></section><section data-markdown><script type="text/template">
 <!-- .slide: style="text-align: left" -->
 
-Los esquemas para algunas tareas de few shot classification, como las Prototypical Nets, también pueden ser útiles para entrenar pequeños conjuntos de datos donde se conocen todas las clases.
+### Algoritmo
 
+- Un modelo es dado de una muestra de consulta que pertenece a una clase nueva nunca antes vista.
+
+- Se proporciona un conjunto de soporte que consta de n ejemplos, cada uno de k diferentes clases no vistas.
+
+- Determinar a qué clase de conjunto de soporte pertenecen las muestras de consulta.
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: style="text-align: left" -->
+
+Los esquemas para algunas tareas de few shot classification, como las Prototypical Nets, también pueden ser útiles para entrenar pequeños conjuntos de datos donde se conocen todas las clases.
 
 </script></section></section><section ><section data-markdown><script type="text/template">
 ## Reconocimiento de forma de mano
 </script></section><section data-markdown><script type="text/template">
 ### Conjuntos de datos
 
-- <small>**LSA16**, 16 formas de mano del Lenguaje de Señas Argentino (LSA) para un total de 800 imágenes de tamaño 32x32.</small>
-
-- <small>**RWTH** está compuesto por una selección de imágenes de tamaño 132x92 recortadas de videos de los intérpretes de lenguaje de señas en la estación de televisión pública alemana PHOENIX.De un total de 45 clases no quedamos con aquellas que cuentan con más de 20 ejemplos.</small>
-
-- <small>**CIARP** contiene 6000 imágenes de tamaño 38x38 adquiridas por una cámara de un solo color. Las imágenes fueron etiquetadas manualmente y corresponden a 10 clases de gestos con las manos.</small>
+![datasets](static/datasets.png)
+<!-- .element: style="width: 75%" -->
 </script></section><section data-markdown><script type="text/template">
 ### Conjuntos de datos
 
-![datasets](static/datasets.png)
-<!-- .element: style="width: 75%" -->
+- <small>**LSA16**, 16 formas de mano del Lenguaje de Señas Argentino (LSA) para un total de 800 imágenes de tamaño 32x32.</small>
+
+- <small>**RWTH** está compuesto por una selección de imágenes de tamaño 132x92 recortadas de videos de los intérpretes de lenguaje de señas en la estación de televisión pública alemana PHOENIX. De un total de 45 clases nos quedamos con aquellas que cuentan con más de 20 ejemplos.</small>
+
+- <small>**CIARP** contiene 6000 imágenes de tamaño 38x38 adquiridas por una cámara de un solo color. Las imágenes fueron etiquetadas manualmente y corresponden a 10 clases de gestos con las manos.</small>
 </script></section><section data-markdown><script type="text/template">
 ## Pasos
 </script></section><section data-markdown><script type="text/template">
@@ -185,7 +181,7 @@ Los esquemas para algunas tareas de few shot classification, como las Prototypic
 ### Resultados
 
 ![results](static/results.png)
-</script></section><section data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 <!-- .slide: style="text-align: left" -->
 
 ### ¿Qué sigue?
@@ -199,7 +195,7 @@ Los esquemas para algunas tareas de few shot classification, como las Prototypic
 
 - Combinar conjuntos de datos para aumentar la muestra.
 
-- Data augmentation.</script></section></section></div>
+- Data augmentation.</script></section></div>
     </div>
 
     <script src="./lib/js/head.min.js"></script>
