@@ -4,18 +4,18 @@
 
 ### Conjuntos de datos
 
-- <small>**LSA16**, 16 formas de mano del Lenguaje de Señas Argentino (LSA) para un total de 800 imágenes de tamaño 32x32.</small>
-
-- <small>**RWTH** está compuesto por una selección de imágenes de tamaño 132x92 recortadas de videos de los intérpretes de lenguaje de señas en la estación de televisión pública alemana PHOENIX.De un total de 45 clases no quedamos con aquellas que cuentan con más de 20 ejemplos.</small>
-
-- <small>**CIARP** contiene 6000 imágenes de tamaño 38x38 adquiridas por una cámara de un solo color. Las imágenes fueron etiquetadas manualmente y corresponden a 10 clases de gestos con las manos.</small>
+![datasets](static/datasets.png)
+<!-- .element: style="width: 75%" -->
 
 ----
 
 ### Conjuntos de datos
 
-![datasets](static/datasets.png)
-<!-- .element: style="width: 75%" -->
+- <small>**LSA16**, 16 formas de mano del Lenguaje de Señas Argentino (LSA) para un total de 800 imágenes de tamaño 32x32.</small>
+
+- <small>**RWTH** está compuesto por una selección de imágenes de tamaño 132x92 recortadas de videos de los intérpretes de lenguaje de señas en la estación de televisión pública alemana PHOENIX. De un total de 45 clases nos quedamos con aquellas que cuentan con más de 20 ejemplos.</small>
+
+- <small>**CIARP** contiene 6000 imágenes de tamaño 38x38 adquiridas por una cámara de un solo color. Las imágenes fueron etiquetadas manualmente y corresponden a 10 clases de gestos con las manos.</small>
 
 ----
 
@@ -35,7 +35,7 @@
 
 ![results](static/results.png)
 
-----
+---
 
 <!-- .slide: style="text-align: left" -->
 
