@@ -58,23 +58,11 @@ Cada bloque convolucional recibe todo el conocimiento colectivo de las capas ant
 
 ### Prototypical Networks
 
-Modelo de meta-aprendizaje para el problema de la clasificación de pocos "disparos".
+Modelo de meta-learning para el problema de la clasificación de pocos "disparos".
 
 ----
 
 Few shot learning generalmente se mide por su rendimiento en tareas de clasificación n-shot y k-way.
-
-----
-
-<!-- .slide: style="text-align: left" -->
-
-### Algoritmo
-
-- Primero, un modelo es dado de una muestra de consulta que pertenece a una clase nueva nunca antes vista. 
-
-- Luego, también se proporciona un conjunto de soporte, S, que consta de n ejemplos, cada uno de k diferentes clases no vistas. 
-
-- Finalmente, el algoritmo debe determinar a qué clase de conjunto de soporte pertenecen las muestras de consulta. 
 
 ----
 
@@ -88,5 +76,16 @@ Few shot learning generalmente se mide por su rendimiento en tareas de clasifica
 
 <!-- .slide: style="text-align: left" -->
 
-Los esquemas para algunas tareas de few shot classification, como las Prototypical Nets, también pueden ser útiles para entrenar pequeños conjuntos de datos donde se conocen todas las clases.
+### Algoritmo
 
+- Un modelo es dado de una muestra de consulta que pertenece a una clase nueva nunca antes vista.
+
+- Se proporciona un conjunto de soporte que consta de n ejemplos, cada uno de k diferentes clases no vistas.
+
+- Determinar a qué clase de conjunto de soporte pertenecen las muestras de consulta.
+
+----
+
+<!-- .slide: style="text-align: left" -->
+
+Los esquemas para algunas tareas de few shot classification, como las Prototypical Nets, también pueden ser útiles para entrenar pequeños conjuntos de datos donde se conocen todas las clases.
