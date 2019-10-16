@@ -1,4 +1,19 @@
-### Presentación del Problema
+## Reconocimiento de Lenguaje de Señas
+
+----
+
+## Visión por Computador
+# +
+## Traducción de Lenguajes
+
+----
+
+![datasets](static/slr/intro1.png)
+<!-- .element: style="width: 75%" -->
+
+----
+
+## Detección de Formas de Manos
 
 ----
 
@@ -10,11 +25,11 @@ El uso de modelos como redes neuronales recurrentes y convolucionales han mostra
 
 <!-- .slide: style="text-align: left" -->
 
-Estos avances son impulsados ​​por una combinación de mejoras en tres áreas:
+Impulsados por mejoras en tres areas:
 
-- Mejores conjuntos de datos <!-- .element: class="fragment" -->
-- Mejores modelos <!-- .element: class="fragment" -->
-- Potencia de cómputo <!-- .element: class="fragment" -->
+- Mejores conjuntos de datos
+- Mejores modelos
+- Potencia de cómputo
 
 Note: Si bien los dos últimos son en su mayoría independientes de un campo en particular, **la disponibilidad de conjuntos de datos de calidad para un campo determinado limita la aplicación de estos nuevos avances.**
 
@@ -29,10 +44,4 @@ La falta de datos perjudica en:
 
 ----
 
-<!-- .slide: style="text-align: left" -->
-
-En particular, las redes neuronales convolucionales (CNN) han demostrado ser muy efectivas en la clasificación de imágenes.
-
-----
-
-**¿Qué pasa si no contamos con esa cantidad de datos?**
+**¿Qué pasa si no contamos con una buena cantidad de datos?**

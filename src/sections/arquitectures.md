@@ -1,13 +1,20 @@
-# Modelos
+<!-- .slide: style="text-align: left" -->
 
-----
+## Modelos
 
-Para resolver este problema vamos a analizar dos modelos:
+- **DenseNet**
 
-- DenseNet <!-- .element: class="fragment" -->
-- Prototypical Networks <!-- .element: class="fragment" -->
+    <small><em>Huang, G. et al: Densely connected convolutional networks, 2017</em></small>
+
+- **Prototypical Networks**
+
+    <small><em>Snell, J. et al: Prototypical networks for few-shot learning, 2017</em></small>
 
 ---
+
+# DenseNet
+
+----
 
 <!-- .slide: style="text-align: left" -->
 
@@ -19,16 +26,19 @@ Para resolver este problema vamos a analizar dos modelos:
 
 ----
 
-DenseNet funciona concatenando los mapas de características de un bloque convolucional con los mapas de características de todos los bloques convolucionales anteriores y usando este valor como entrada para el siguiente bloque convolucional.
-
 <center>
 ![DenseNet](static/DenseConnectivity.png)
 <!-- .element: style="width: 75%; border: none" -->
 </center>
 
+NOTE: DenseNet funciona concatenando los mapas de características de un bloque convolucional con los mapas de características de todos los bloques convolucionales anteriores y usando este valor como entrada para el siguiente bloque convolucional.
+
 ----
 
-Cada bloque convolucional recibe todo el conocimiento colectivo de las capas anteriores manteniendo el estado global de la red a la que se puede acceder
+![DenseNet](static/DenseNet.png)
+<!-- .element: style="border: none" -->
+
+NOTE: Cada bloque convolucional recibe todo el conocimiento colectivo de las capas anteriores manteniendo el estado global de la red a la que se puede acceder
 
 ----
 
@@ -43,11 +53,6 @@ Cada bloque convolucional recibe todo el conocimiento colectivo de las capas ant
 
 - Fomentan la reutilización de características
 
-----
-
-![DenseNet](static/DenseNet.png)
-<!-- .element: style="border: none" -->
-
 ---
 
 ## Prototypical Networks
@@ -56,13 +61,11 @@ Cada bloque convolucional recibe todo el conocimiento colectivo de las capas ant
 
 <!-- .slide: style="text-align: left" -->
 
-### Prototypical Networks
+## Prototypical Networks
 
 Modelo de meta-learning para el problema de la clasificación de pocos "disparos".
 
-----
-
-Few shot learning generalmente se mide por su rendimiento en tareas de clasificación n-shot y k-way.
+NOTE: Few shot learning generalmente se mide por su rendimiento en tareas de clasificación n-shot y k-way.
 
 ----
 
@@ -86,6 +89,4 @@ Few shot learning generalmente se mide por su rendimiento en tareas de clasifica
 
 ----
 
-<!-- .slide: style="text-align: left" -->
-
-Los esquemas para algunas tareas de few shot classification, como las Prototypical Nets, también pueden ser útiles para entrenar pequeños conjuntos de datos donde se conocen todas las clases.
+También útiles para entrenar pequeños conjuntos de datos donde se conocen todas las clases.
